@@ -1,7 +1,7 @@
 # Copyright (c) 2022 Caio Souza, Gustavo Ariadno. All rights reserved. #
 # 42 #
 
-NAME = animal
+NAME = abstract
 
 SOURCES = ./
 SOURCES_FILES = $(wildcard *.cpp)
