@@ -18,12 +18,15 @@ Dog::~Dog() {
 }
 
 Dog &Dog::operator=(Dog const &rhs) {
-    (void)rhs;
+    Dog::type = rhs.type;
+    Dog::brain = new Brain(*(rhs.brain));
     return (*this);
 }
 
 Dog::Dog(Dog const &src): Animal(src) {
-    *this = src; 
+    Dog::type = src.type;
+    Dog::brain = new Brain(*(src.brain));
+    *this = src;
 }
 
 void Dog::makeSound(void) const {

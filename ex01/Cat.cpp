@@ -16,11 +16,14 @@ Cat::~Cat() {
 }
 
 Cat &Cat::operator=(Cat const &rhs) {
-    (void)rhs;
+    Cat::type = rhs.type;
+    Cat::brain = new Brain(*(rhs.brain));
     return (*this);
 }
 
 Cat::Cat(Cat const &src): Animal(src) {
+    Cat::type = src.type;
+    Cat::brain = new Brain(*(src.brain));
     *this = src;
 }
 

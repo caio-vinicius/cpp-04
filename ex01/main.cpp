@@ -29,6 +29,24 @@ int brains(void) {
         }
         delete [] animals;
     }
+    std::cout << std::endl;
+    {
+        Dog basic;
+        // make brain public to test it
+        //basic.brain->setIdea("something");
+        //std::cout << "IDEA BASIC: " << basic.brain->getIdea() << std::endl;
+        Dog tmp = basic;
+        //std::cout << "IDEA TMP: " << tmp.brain->getIdea() << std::endl;
+    }
+    std::cout << std::endl;
+    {
+        Dog basic;
+        // make brain public to test it
+        //basic.brain->setIdea("something");
+        //std::cout << "IDEA BASIC: " << basic.brain->getIdea() << std::endl;
+        Dog tmp(basic);
+        //std::cout << "IDEA TMP: " << tmp.brain->getIdea() << std::endl;
+    }
     return 0;
 }
 

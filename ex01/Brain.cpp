@@ -19,6 +19,18 @@ Brain &Brain::operator=(Brain const &rhs) {
 }
 
 Brain::Brain(Brain const &src) {
+    std::cout << "Brain constructor called" << std::endl;
     (void)src;
+    for (unsigned int i = 0; i < AMOUNT_IDEAS; i++) {
+        Brain::ideas[i] = src.ideas[i];
+    }
     *this = src;
+}
+
+void Brain::setIdea(std::string idea, unsigned int pos) {
+    Brain::ideas[pos] = idea;
+}
+
+std::string Brain::getIdea(unsigned int pos) {
+    return Brain::ideas[pos];
 }
