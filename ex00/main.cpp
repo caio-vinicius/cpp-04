@@ -20,7 +20,7 @@ int animal(void) {
         i->makeSound();
         j->makeSound();
         meta->makeSound();
-        
+
         delete i;
         delete j;
         delete meta;
@@ -36,7 +36,7 @@ int animal(void) {
         i->makeSound();
         j->makeSound();
         meta->makeSound();
-        
+
         delete i;
         delete j;
         delete meta;

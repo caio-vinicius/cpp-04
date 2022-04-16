@@ -21,13 +21,13 @@ WrongAnimal &WrongAnimal::operator=(WrongAnimal const &rhs) {
 
 WrongAnimal::WrongAnimal(WrongAnimal const &src) {
     (void)src;
-    *this = src; 
+    *this = src;
 }
 
 void WrongAnimal::makeSound(void) const {
     std::cout << "WrongAnimal sound: [ UNRECOGNIZABLE NOISES FROM SOME ANIMAL ]" << std::endl;
 }
-    
+
 std::string WrongAnimal::getType(void) const {
     return (WrongAnimal::type);
 }

@@ -21,13 +21,13 @@ Animal &Animal::operator=(Animal const &rhs) {
 
 Animal::Animal(Animal const &src) {
     (void)src;
-    *this = src; 
+    *this = src;
 }
 
 void Animal::makeSound(void) const {
     std::cout << "Animal sound: [ UNRECOGNIZABLE NOISES FROM SOME ANIMAL ]" << std::endl;
 }
-    
+
 std::string Animal::getType(void) const {
     return (Animal::type);
 }
