@@ -21,7 +21,7 @@ AAnimal &AAnimal::operator=(AAnimal const &rhs) {
 
 AAnimal::AAnimal(AAnimal const &src) {
     (void)src;
-    *this = src; 
+    *this = src;
 }
 
 std::string AAnimal::getType(void) const {
